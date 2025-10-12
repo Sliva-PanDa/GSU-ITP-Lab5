@@ -1,5 +1,7 @@
+# Имя рабочего процесса
 name: Build Lab 2 Project (Senozhenskiy)
 
+# Триггеры для запуска
 on:
   push:
     branches: [ "main" ]
@@ -8,23 +10,31 @@ on:
 
 jobs:
   build:
+    # Платформы для сборки
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
 
     steps:
+    # Шаг 1: Скачивание репозитория
     - uses: actions/checkout@v4
     
+    # Шаг 2: Установка .NET SDK
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
+        # Правильная, общая версия .NET
         dotnet-version: 8.0.x
     
+    # Шаг 3: Восстановление зависимостей
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./lab2-Senozhenskiy 
+      # Правильный путь к папке с .csproj файлом
+      working-directory: ./lab2-Senozhenskiy/lab2
     
+    # Шаг 4: Сборка проекта
     - name: Build
       run: dotnet build --no-restore
-      working-directory: ./lab2-Senozhenskiy
+      # Правильный путь к папке с .csproj файлом
+      working-directory: ./lab2-Senozhenskiy/lab2
