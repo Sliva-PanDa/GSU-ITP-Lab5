@@ -129,3 +129,10 @@ D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\obj\Debug\net8.0\refint\lab2.
 D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\obj\Debug\net8.0\lab2.pdb
 D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\obj\Debug\net8.0\lab2.genruntimeconfig.cache
 D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\obj\Debug\net8.0\ref\lab2.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\ВсёВсё\проекты\БД\lab2\lab2\lab2\bin\Debug\net8.0\appsettings.json

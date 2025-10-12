@@ -34,10 +34,7 @@ public partial class SciencePortalDbContext : DbContext
 
     public virtual DbSet<Teacher> Teachers { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=	db28071.public.databaseasp.net;Database=db28071;User Id=db28071;Password=X?x78C-hM_c4;Encrypt=False;MultipleActiveResultSets=True;");
-
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Cyrillic_General_CI_AS");
