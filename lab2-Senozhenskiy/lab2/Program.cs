@@ -80,10 +80,11 @@ namespace lab2
                     Console.WriteLine($"Проект: '{item.ProjectName}', Руководитель: {item.LeaderName}");
                 }
 
+                
                 // 2.5: Выборка из двух таблиц с фильтром (Projects)
                 Console.WriteLine("\n--- 2.5: Проекты, начатые в 2024 году ---");
                 var recentProjects = db.Projects
-                    .Where(p => p.StartDate.Year == 2024) // Этот фильтр теперь должен сработать
+                    .Where(p => p.StartDate.Year == 2024) 
                     .Include(p => p.Leader)
                     .Select(p => new
                     {
