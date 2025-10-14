@@ -81,10 +81,9 @@ namespace lab2
                 }
 
                 // 2.5: Выборка из двух таблиц с фильтром (Projects)
-                Console.WriteLine("\n--- 2.5: Проекты, начатые после 1 января 2023 года ---");
-                var dateFilter = new DateOnly(2023, 1, 1);
+                Console.WriteLine("\n--- 2.5: Проекты, начатые в 2024 году ---");
                 var recentProjects = db.Projects
-                    .Where(p => p.StartDate > dateFilter)
+                    .Where(p => p.StartDate.Year == 2024) // Этот фильтр теперь должен сработать
                     .Include(p => p.Leader)
                     .Select(p => new
                     {
@@ -103,11 +102,8 @@ namespace lab2
                 }
                 else
                 {
-                    Console.WriteLine("Проекты, начатые после 2023 года, не найдены.");
+                    Console.WriteLine("Проекты, удовлетворяющие условию, не найдены.");
                 }
-
-                Console.WriteLine("\nНажмите любую клавишу для выполнения операций вставки, обновления и удаления...");
-                Console.ReadKey();
 
                 // 2.6: Вставка данных в таблицу «один» (ScientificDirections)
                 Console.WriteLine("\n--- 2.6: Вставка нового научного направления ---");
