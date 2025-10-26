@@ -1,0 +1,10 @@
+# Dependencies
+/packages/
+/bin/
+/obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
