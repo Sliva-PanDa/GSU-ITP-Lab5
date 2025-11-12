@@ -1,4 +1,4 @@
-[![Build Lab 4 Project (Senozhenskiy)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml/badge.svg)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml)
+
 
 # Лабораторная работа №4: Разработка моделей и контроллеров ASP.NET MVC
 
@@ -17,3 +17,6 @@
 -   **Отображение связанных данных:** На страницах-списках вместо ID отображаются значимые поля из связанных таблиц (например, названия кафедр).
 -   **Кэширование:** Применен атрибут `[ResponseCache]` для кэширования ответов сервера на 272 секунды.
 -   **Непрерывная интеграция:** Настроен рабочий процесс GitHub Actions для автоматической сборки проекта.
+
+
+Здесь должен быть статус бэдж [![Build Lab 4 Project (Senozhenskiy)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml/badge.svg)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml)
