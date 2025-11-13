@@ -1,0 +1,34 @@
+name: Build Lab 4 Project (Senozhenskiy)
+
+on:
+  push:
+    paths:
+      - 'lab4-Senozhenskiy/**'
+    branches: [ "main" ]
+  pull_request:
+    paths:
+      - 'lab4-Senozhenskiy/**'
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.0
+    
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./lab4-Senozhenskiy/SciencePortalMVC
+    
+    - name: Build
+      run: dotnet build --no-restore
+      working-directory: ./lab4-Senozhenskiy/SciencePortalMVC
