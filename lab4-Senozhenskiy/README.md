@@ -1,4 +1,3 @@
-[![Build Lab 4 Project (Senozhenskiy)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml/badge.svg)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml)
 
 # Лабораторная работа №4: Разработка моделей и контроллеров ASP.NET MVC
 
@@ -17,3 +16,5 @@
 -   **Инициализация данных:** Пользовательский Middleware для автоматического заполнения базы данных при первом запуске
 -   **Оптимизация:** Кэширование на стороне сервера с помощью атрибута `[ResponseCache]`
 -   **Непрерывная интеграция:** Настроен рабочий процесс GitHub Actions для автоматической сборки проекта
+
+Статус [![Build Lab 4 Project (Senozhenskiy)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml/badge.svg)](https://github.com/IT-GSTU/itp16/actions/workflows/lab4-build.yml)
