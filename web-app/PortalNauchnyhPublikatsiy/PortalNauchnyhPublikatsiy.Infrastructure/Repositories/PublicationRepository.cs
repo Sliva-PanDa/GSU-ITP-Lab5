@@ -26,11 +26,21 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task<IEnumerable<Publication>> GetAllAsync()
+        public async Task<IEnumerable<Publication>> GetAllAsync(string? searchString, int? year)
         {
-            return await _context.Publications
-                .Include(p => p.JournalConference) 
-                .ToListAsync();
+            var query = _context.Publications.Include(p => p.JournalConference).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(p => p.Title.Contains(searchString));
+            }
+
+            if (year.HasValue)
+            {
+                query = query.Where(p => p.Year == year.Value);
+            }
+
+            return await query.ToListAsync();
         }
 
         public async Task AddAsync(Publication publication)

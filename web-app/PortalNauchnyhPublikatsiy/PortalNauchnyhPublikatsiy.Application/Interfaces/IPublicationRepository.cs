@@ -10,7 +10,7 @@ namespace PortalNauchnyhPublikatsiy.Application.Interfaces
     public interface IPublicationRepository
     {
         Task<Publication?> GetByIdAsync(int id);
-        Task<IEnumerable<Publication>> GetAllAsync();
+        Task<IEnumerable<Publication>> GetAllAsync(string? searchString, int? year);
         Task AddAsync(Publication publication);
         Task UpdateAsync(Publication publication);
         Task DeleteAsync(int id);

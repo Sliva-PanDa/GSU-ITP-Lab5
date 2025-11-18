@@ -39,9 +39,9 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
             };
         }
 
-        public async Task<IEnumerable<PublicationDto>> GetAllPublicationsAsync()
+        public async Task<IEnumerable<PublicationDto>> GetAllPublicationsAsync(string? searchString, int? year)
         {
-            var publications = await _publicationRepository.GetAllAsync();
+            var publications = await _publicationRepository.GetAllAsync(searchString, year);
 
             return publications.Select(publication => new PublicationDto
             {

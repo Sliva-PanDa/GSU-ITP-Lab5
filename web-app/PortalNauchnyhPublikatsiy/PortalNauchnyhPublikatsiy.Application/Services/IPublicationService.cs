@@ -9,7 +9,7 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
 {
     public interface IPublicationService
     {
-        Task<IEnumerable<PublicationDto>> GetAllPublicationsAsync();
+        Task<IEnumerable<PublicationDto>> GetAllPublicationsAsync(string? searchString, int? year);
         Task<PublicationDto?> GetPublicationByIdAsync(int id);
         Task CreatePublicationAsync(CreatePublicationDto publicationDto);
         Task UpdatePublicationAsync(UpdatePublicationDto publicationDto);
