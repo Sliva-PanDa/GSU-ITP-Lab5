@@ -1,0 +1,74 @@
+﻿@model PortalNauchnyhPublikatsiy.Application.DTO.TeacherProfileDto
+@{
+    ViewData["Title"] = "Профиль преподавателя";
+}
+
+<h1>@Model.FullName</h1>
+
+<div>
+    <h4>@Model.Position, @Model.Degree</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Кафедра</dt>
+        <dd class="col-sm-9">@Model.DepartmentName</dd>
+
+        <dt class="col-sm-3">Индекс Хирша</dt>
+        <dd class="col-sm-9"><strong>@Model.HirschIndex</strong></dd>
+
+        <dt class="col-sm-3">Публикаций в Q1/Q2</dt>
+        <dd class="col-sm-9"><strong>@Model.Q1Q2Count</strong></dd>
+    </dl>
+</div>
+
+<h3 class="mt-4">Публикации</h3>
+@if (Model.Publications.Any())
+{
+    <table class="table table-sm">
+        @foreach (var pub in Model.Publications)
+        {
+            <tr>
+                <td>@pub.Year</td>
+                <td><a asp-controller="Publications" asp-action="Details" asp-route-id="@pub.Id">@pub.Title</a></td>
+                <td>@pub.JournalName</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>У данного преподавателя нет публикаций.</p>
+}
+<h3 class="mt-4">Участие в проектах и грантах</h3>
+
+@if (Model.Projects.Any())
+{
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Название проекта</th>
+                <th>Номер</th>
+                <th>Сроки</th>
+                <th>Роль</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var proj in Model.Projects)
+            {
+                <tr>
+                    <td>@proj.Name</td>
+                    <td>@proj.Number</td>
+                    <td>@proj.StartDate.ToShortDateString() - @(proj.EndDate?.ToShortDateString() ?? "...")</td>
+                    <td><strong>@proj.Role</strong></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Преподаватель не участвует в проектах.</p>
+}
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>
+</div>

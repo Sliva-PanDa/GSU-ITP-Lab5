@@ -1,0 +1,42 @@
+﻿@model PortalNauchnyhPublikatsiy.Application.DTO.PublicationDto
+
+@{
+    ViewData["Title"] = "Детали публикации";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>@Model.Title</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            Тип
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt class="col-sm-3">
+            Год
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt class="col-sm-3">
+            Журнал / Конференция
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.JournalName)
+        </dd>
+        <dt class="col-sm-3">
+            DOI
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.DOI)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Изменить</a>
+    <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>
+</div>

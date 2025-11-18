@@ -1,0 +1,29 @@
+﻿@model PortalNauchnyhPublikatsiy.Application.DTO.PublicationDto
+
+@{
+    ViewData["Title"] = "Удаление публикации";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h3>Вы уверены, что хотите удалить эту публикацию?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Название</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
+
+        <dt class="col-sm-3">Год</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Year)</dd>
+
+        <dt class="col-sm-3">Журнал</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.JournalName)</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <!-- Скрытое поле для передачи Id обратно в POST-метод -->
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>
+    </form>
+</div>
