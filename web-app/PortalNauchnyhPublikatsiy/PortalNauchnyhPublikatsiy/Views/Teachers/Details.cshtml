@@ -38,6 +38,36 @@ else
 {
     <p>У данного преподавателя нет публикаций.</p>
 }
+<h3 class="mt-4">Участие в проектах и грантах</h3>
+
+@if (Model.Projects.Any())
+{
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Название проекта</th>
+                <th>Номер</th>
+                <th>Сроки</th>
+                <th>Роль</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var proj in Model.Projects)
+            {
+                <tr>
+                    <td>@proj.Name</td>
+                    <td>@proj.Number</td>
+                    <td>@proj.StartDate.ToShortDateString() - @(proj.EndDate?.ToShortDateString() ?? "...")</td>
+                    <td><strong>@proj.Role</strong></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Преподаватель не участвует в проектах.</p>
+}
 
 <div>
     <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>

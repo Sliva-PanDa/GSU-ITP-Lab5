@@ -18,5 +18,6 @@ namespace PortalNauchnyhPublikatsiy.Application.DTO
         public int Q1Q2Count { get; set; }
 
         public IEnumerable<PublicationDto> Publications { get; set; } = new List<PublicationDto>();
+        public IEnumerable<ProjectDto> Projects { get; set; } = new List<ProjectDto>();
     }
 }

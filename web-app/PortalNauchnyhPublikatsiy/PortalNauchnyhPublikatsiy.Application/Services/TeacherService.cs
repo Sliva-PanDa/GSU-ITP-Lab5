@@ -12,11 +12,16 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
     {
         private readonly ITeacherRepository _teacherRepository;
         private readonly IPublicationRepository _publicationRepository;
+        private readonly IProjectRepository _projectRepository; 
 
-        public TeacherService(ITeacherRepository teacherRepository, IPublicationRepository publicationRepository)
+        public TeacherService(
+            ITeacherRepository teacherRepository,
+            IPublicationRepository publicationRepository,
+            IProjectRepository projectRepository)
         {
             _teacherRepository = teacherRepository;
             _publicationRepository = publicationRepository;
+            _projectRepository = projectRepository; 
         }
 
         public async Task<IEnumerable<TeacherDto>> GetAllTeachersAsync()
@@ -36,6 +41,7 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
             if (teacher == null) return null;
 
             var publications = await _publicationRepository.GetPublicationsByTeacherIdAsync(id);
+            var projects = await _projectRepository.GetProjectsByTeacherIdAsync(id);
             var hIndex = await _teacherRepository.GetHirschIndexAsync(id);
             var q1q2Count = await _teacherRepository.GetQ1Q2CountAsync(id);
 
@@ -57,6 +63,15 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
                     JournalName = p.JournalConference?.Name,
                     DOI = p.DOI,
                     JournalConferenceId = p.JournalConferenceId
+                }),
+                Projects = projects.Select(p => new ProjectDto
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Number = p.Number,
+                    StartDate = p.StartDate,
+                    EndDate = p.EndDate,
+                    Role = p.LeaderId == id ? "Руководитель" : "Участник"
                 })
             };
         }
