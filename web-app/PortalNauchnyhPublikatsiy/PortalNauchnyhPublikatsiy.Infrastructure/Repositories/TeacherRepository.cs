@@ -29,5 +29,21 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
                 .Include(t => t.Department)
                 .FirstOrDefaultAsync(t => t.Id == id);
         }
+        public async Task<int> GetHirschIndexAsync(int teacherId)
+        {
+            var sql = $"SELECT dbo.fn_GetHirschIndex({teacherId})";
+            var result = await _context.Database.ExecuteSqlRawAsync(sql);
+
+
+            var hIndex = _context.Database.SqlQuery<int>($"SELECT dbo.fn_GetHirschIndex({teacherId})").AsEnumerable().FirstOrDefault();
+            return hIndex;
+        }
+
+        public async Task<int> GetQ1Q2CountAsync(int teacherId)
+        {
+            // Вызов хранимой процедуры, которая возвращает одно значение
+            var q1q2Count = _context.Database.SqlQuery<int>($"EXEC sp_GetQ1Q2CountForTeacher @TeacherId={teacherId}").AsEnumerable().FirstOrDefault();
+            return q1q2Count;
+        }
     }
 }

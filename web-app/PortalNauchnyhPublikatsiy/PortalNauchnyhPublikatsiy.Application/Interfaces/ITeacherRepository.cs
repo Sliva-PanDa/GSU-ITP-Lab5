@@ -11,5 +11,7 @@ namespace PortalNauchnyhPublikatsiy.Application.Interfaces
     {
         Task<IEnumerable<Teacher>> GetAllAsync();
         Task<Teacher?> GetByIdAsync(int id);
+        Task<int> GetHirschIndexAsync(int teacherId);
+        Task<int> GetQ1Q2CountAsync(int teacherId);
     }
 }

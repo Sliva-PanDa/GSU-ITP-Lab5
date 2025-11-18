@@ -21,6 +21,7 @@ builder.Services.AddScoped<IJournalConferenceService, JournalConferenceService>(
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ITeacherService, TeacherService>();
 
 var app = builder.Build();
 

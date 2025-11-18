@@ -14,5 +14,6 @@ namespace PortalNauchnyhPublikatsiy.Application.Interfaces
         Task AddAsync(Publication publication);
         Task UpdateAsync(Publication publication);
         Task DeleteAsync(int id);
+        Task<IEnumerable<Publication>> GetPublicationsByTeacherIdAsync(int teacherId);
     }
 }
