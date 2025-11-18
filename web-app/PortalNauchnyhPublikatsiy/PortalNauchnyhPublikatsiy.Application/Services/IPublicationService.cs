@@ -1,9 +1,10 @@
-﻿using System;
+﻿using PortalNauchnyhPublikatsiy.Application.DTO;
+using PortalNauchnyhPublikatsiy.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PortalNauchnyhPublikatsiy.Application.DTO;
 
 namespace PortalNauchnyhPublikatsiy.Application.Services
 {
@@ -14,5 +15,6 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
         Task CreatePublicationAsync(CreatePublicationDto publicationDto);
         Task UpdatePublicationAsync(UpdatePublicationDto publicationDto);
         Task DeletePublicationAsync(int id);
+        Task<IEnumerable<PublicationDto>> GetPublicationsByDepartmentAndYearAsync(int departmentId, int year);
     }
 }

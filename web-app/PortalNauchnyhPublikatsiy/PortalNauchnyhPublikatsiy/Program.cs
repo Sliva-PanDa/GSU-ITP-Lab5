@@ -23,6 +23,8 @@ builder.Services.AddScoped<IJournalConferenceService, JournalConferenceService>(
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
 var app = builder.Build();
 

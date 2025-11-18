@@ -89,5 +89,21 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
         {
             await _publicationRepository.DeleteAsync(id);
         }
+
+        public async Task<IEnumerable<PublicationDto>> GetPublicationsByDepartmentAndYearAsync(int departmentId, int year)
+        {
+            var publications = await _publicationRepository.GetPublicationsByDepartmentAndYearAsync(departmentId, year);
+
+            return publications.Select(publication => new PublicationDto
+            {
+                Id = publication.Id,
+                Title = publication.Title,
+                Type = publication.Type,
+                Year = publication.Year,
+                JournalName = publication.JournalConference?.Name,
+                JournalConferenceId = publication.JournalConferenceId,
+                DOI = publication.DOI
+            });
+        }
     }
 }

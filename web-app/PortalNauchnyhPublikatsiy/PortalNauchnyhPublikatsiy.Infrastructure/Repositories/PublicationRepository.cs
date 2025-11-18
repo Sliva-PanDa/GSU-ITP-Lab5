@@ -64,12 +64,30 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
         public async Task<IEnumerable<Publication>> GetPublicationsByTeacherIdAsync(int teacherId)
         {
             return await _context.Publications
                 .Include(p => p.JournalConference)
                 .Where(p => _context.PublicationAuthors.Any(pa => pa.PublicationId == p.Id && pa.TeacherId == teacherId))
                 .OrderByDescending(p => p.Year)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Publication>> GetPublicationsByDepartmentAndYearAsync(int departmentId, int year)
+        {
+            // 1. Находим всех преподавателей указанной кафедры
+            var teacherIds = await _context.Teachers
+                .Where(t => t.DepartmentId == departmentId)
+                .Select(t => t.Id)
+                .ToListAsync();
+
+            // 2. Находим все публикации этих преподавателей за указанный год
+            return await _context.Publications
+                .Include(p => p.JournalConference)
+                .Where(p => p.Year == year &&
+                            _context.PublicationAuthors.Any(pa => pa.PublicationId == p.Id && teacherIds.Contains(pa.TeacherId)))
+                .OrderBy(p => p.Title)
                 .ToListAsync();
         }
     }
