@@ -11,5 +11,8 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
     {
         Task<IEnumerable<TeacherDto>> GetAllTeachersAsync(); // DTO для простого списка
         Task<TeacherProfileDto?> GetTeacherProfileAsync(int id);
+        Task AddTeacherAsync(CreateTeacherDto dto);
+        Task UpdateTeacherAsync(UpdateTeacherDto dto);
+        Task DeleteTeacherAsync(int id);
     }
 }
