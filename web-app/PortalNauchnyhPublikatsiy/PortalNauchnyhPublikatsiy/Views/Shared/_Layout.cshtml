@@ -29,8 +29,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Publications" asp-action="Index">Публикации</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reports" asp-action="PublicationsByDepartment">Отчеты</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Отчеты
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Reports" asp-action="PublicationsByDepartment">Публикации по кафедре</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Reports" asp-action="PublicationsByTeacher">Публикации по преподавателю</a></li>
+                            </ul>
                         </li>
                     </ul>
 

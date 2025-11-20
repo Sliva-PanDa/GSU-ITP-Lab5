@@ -16,5 +16,6 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
         Task UpdatePublicationAsync(UpdatePublicationDto publicationDto);
         Task DeletePublicationAsync(int id);
         Task<IEnumerable<PublicationDto>> GetPublicationsByDepartmentAndYearAsync(int departmentId, int year);
+        Task<IEnumerable<PublicationDto>> GetPublicationsByTeacherAndYearAsync(int teacherId, int year);
     }
 }
