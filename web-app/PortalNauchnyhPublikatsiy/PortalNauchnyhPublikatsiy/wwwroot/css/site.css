@@ -20,3 +20,167 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+/* --- 0. ÁÀÇÎÂÛÅ ÍÀÑÒĞÎÉÊÈ È ØĞÈÔÒÛ --- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+
+:root {
+    --midnight-blue: #101422;
+    --deep-space: #0a0f18;
+    --electric-purple: #9A48FF;
+    --aurora-gradient: linear-gradient(90deg, #9A48FF, #3B82F6, #A855F7, #9A48FF);
+    --moon-white: #E1E1E6;
+    --comet-grey: #8D8D99;
+    --glass-bg: rgba(20, 25, 40, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --transition-fast: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    background-color: var(--midnight-blue);
+    background-image: radial-gradient(circle at 1% 1%, var(--midnight-blue) 0%, var(--deep-space) 100%);
+    color: var(--moon-white);
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 1. ÒÈÏÎÃĞÀÔÈÊÀ: ÇÀÃÎËÎÂÊÈ Ñ ÕÀĞÀÊÒÅĞÎÌ --- */
+h1, h3, h4 {
+    color: var(--moon-white);
+    font-weight: 800;
+    background: linear-gradient(90deg, #FFFFFF, #E1E1E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(225, 225, 230, 0.1);
+}
+
+a {
+    color: var(--electric-purple);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+    a:hover {
+        color: var(--moon-white);
+        text-shadow: 0 0 8px var(--electric-purple);
+    }
+
+/* --- 2. ÍÀÂÈÃÀÖÈß: ÏÀĞßÙÅÅ ÑÒÅÊËÎ --- */
+.navbar {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0; 
+}
+
+.navbar-brand, .nav-link {
+    color: var(--moon-white) !important;
+    font-weight: 700;
+    transition: var(--transition-fast);
+}
+
+    .nav-link:hover {
+        color: var(--electric-purple) !important;
+        transform: translateY(-2px);
+    }
+
+/* --- 3. ÒÀÁËÈÖÛ: ÈÍÔÎĞÌÀÖÈß Â ÍÅÂÅÑÎÌÎÑÒÈ --- */
+.table {
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: separate; 
+    border-spacing: 0;
+}
+
+    /* 
+  ßâíî çàäàåì öâåò òåêñòà äëÿ âñåõ ÿ÷ååê, ÷òîáû èçáåæàòü ïåğåîïğåäåëåíèÿ.
+*/
+    .table > :not(caption) > * > * {
+        color: var(--moon-white);
+        background-color: transparent;
+        border-bottom: 1px solid var(--glass-border);
+        padding: 1.25rem 1rem;
+        vertical-align: middle;
+        transition: var(--transition-fast);
+    }
+
+    .table > tbody > tr:last-child > * {
+        border-bottom: none;
+    }
+
+    .table thead th {
+        color: var(--comet-grey);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        border-bottom: 2px solid var(--glass-border);
+        text-align: left;
+    }
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgba(154, 72, 255, 0.05);
+}
+
+.table-hover > tbody > tr:hover > * {
+    --bs-table-accent-bg: rgba(154, 72, 255, 0.15);
+    transform: translateY(-2px); 
+}
+
+/* --- 4. ÔÎĞÌÛ: ÈÍÒÅĞÀÊÒÈÂÍÛÅ È ÒÀÊÒÈËÜÍÛÅ --- */
+.form-control, .form-select {
+    background-color: transparent;
+    color: var(--moon-white);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px; 
+    padding: 12px 16px;
+    transition: var(--transition-fast);
+}
+
+    .form-control::placeholder {
+        color: var(--comet-grey);
+    }
+
+
+    .form-control:focus, .form-select:focus {
+        background-color: var(--glass-bg);
+        color: var(--moon-white);
+        box-shadow: 0 0 20px rgba(154, 72, 255, 0.4);
+        border: 1px solid transparent;
+        background-image: linear-gradient(var(--midnight-blue), var(--midnight-blue)), var(--aurora-gradient);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        animation: aurora-spin 3s linear infinite;
+    }
+
+@keyframes aurora-spin {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* --- 5. ÔÓÒÅĞ: ÌÎÍÎËÈÒÍÎÅ ÇÀÂÅĞØÅÍÈÅ --- */
+.footer {
+    background-color: transparent;
+    color: var(--comet-grey);
+    padding: 2rem 0;
+}
+
+.border-top {
+    /* Ãğàäèåíòíàÿ ëèíèÿ âìåñòî ñïëîøíîé */
+    border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--glass-border), transparent);
+}
