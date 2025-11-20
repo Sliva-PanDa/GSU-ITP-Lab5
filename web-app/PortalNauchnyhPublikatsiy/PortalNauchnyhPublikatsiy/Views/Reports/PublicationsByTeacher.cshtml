@@ -1,0 +1,54 @@
+﻿@model IEnumerable<PortalNauchnyhPublikatsiy.Application.DTO.PublicationDto>
+
+@{
+    ViewData["Title"] = "Отчет: Публикации по преподавателю";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="PublicationsByTeacher" method="get">
+            <div class="form-actions no-color d-flex align-items-center mb-3">
+                <div class="me-2">
+                    <select name="teacherId" class="form-control" asp-items="ViewBag.TeacherId">
+                        <option value="">-- Выберите преподавателя --</option>
+                    </select>
+                </div>
+                <div class="me-2">
+                    <input type="number" name="year" class="form-control" placeholder="Введите год" value="@Context.Request.Query["year"]" />
+                </div>
+                <div class="me-2">
+                    <input type="submit" value="Сформировать" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Тип</th>
+                <th>Журнал / Конференция</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Type</td>
+                    <td>@item.JournalName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Context.Request.Query.ContainsKey("teacherId"))
+{
+    <p>Публикации для выбранного преподавателя за указанный год не найдены.</p>
+}

@@ -8,11 +8,13 @@ namespace PortalNauchnyhPublikatsiy.Web.Controllers
     {
         private readonly IPublicationService _publicationService;
         private readonly IDepartmentService _departmentService;
+        private readonly ITeacherService _teacherService;
 
-        public ReportsController(IPublicationService publicationService, IDepartmentService departmentService)
+        public ReportsController(IPublicationService publicationService, IDepartmentService departmentService, ITeacherService teacherService)
         {
             _publicationService = publicationService;
             _departmentService = departmentService;
+            _teacherService = teacherService;
         }
 
         // GET-метод для отображения формы и результатов
@@ -30,6 +32,22 @@ namespace PortalNauchnyhPublikatsiy.Web.Controllers
             }
 
             // Если параметры не переданы, возвращаем пустой список
+            return View(new List<PortalNauchnyhPublikatsiy.Application.DTO.PublicationDto>());
+        }
+
+        // GET: Reports/PublicationsByTeacher
+        public async Task<IActionResult> PublicationsByTeacher(int? teacherId, int? year)
+        {
+            // Загружаем список преподавателей для выпадающего списка
+            var teachers = await _teacherService.GetAllTeachersAsync();
+            ViewBag.TeacherId = new SelectList(teachers, "Id", "FullName", teacherId);
+
+            if (teacherId.HasValue && year.HasValue)
+            {
+                var publications = await _publicationService.GetPublicationsByTeacherAndYearAsync(teacherId.Value, year.Value);
+                return View(publications);
+            }
+
             return View(new List<PortalNauchnyhPublikatsiy.Application.DTO.PublicationDto>());
         }
     }

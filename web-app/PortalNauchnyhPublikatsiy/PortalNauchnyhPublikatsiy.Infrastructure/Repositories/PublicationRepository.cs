@@ -90,5 +90,15 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
                 .OrderBy(p => p.Title)
                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<Publication>> GetPublicationsByTeacherAndYearAsync(int teacherId, int year)
+        {
+            return await _context.Publications
+                .Include(p => p.JournalConference)
+                .Where(p => p.Year == year &&
+                            _context.PublicationAuthors.Any(pa => pa.PublicationId == p.Id && pa.TeacherId == teacherId))
+                .OrderBy(p => p.Title)
+                .ToListAsync();
+        }
     }
 }

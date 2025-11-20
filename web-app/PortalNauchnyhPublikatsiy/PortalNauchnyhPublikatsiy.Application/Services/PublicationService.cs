@@ -105,5 +105,22 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
                 DOI = publication.DOI
             });
         }
+
+        public async Task<IEnumerable<PublicationDto>> GetPublicationsByTeacherAndYearAsync(int teacherId, int year)
+        {
+            var publications = await _publicationRepository.GetPublicationsByTeacherAndYearAsync(teacherId, year);
+
+            // Маппинг в DTO
+            return publications.Select(publication => new PublicationDto
+            {
+                Id = publication.Id,
+                Title = publication.Title,
+                Type = publication.Type,
+                Year = publication.Year,
+                JournalName = publication.JournalConference?.Name,
+                JournalConferenceId = publication.JournalConferenceId,
+                DOI = publication.DOI
+            });
+        }
     }
 }
