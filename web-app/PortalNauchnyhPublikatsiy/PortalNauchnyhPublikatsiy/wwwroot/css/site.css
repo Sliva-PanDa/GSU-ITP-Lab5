@@ -37,32 +37,52 @@ body {
     --transition-fast: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* --- КЛЮЧЕВОЕ ИСПРАВЛЕНИЕ №1: FLEXBOX ЛОГИКА ДЛЯ BODY --- */
+/* --- АНИМАЦИИ --- */
+
+/* Анимация для "Аврора-бордера" на формах */
+@keyframes aurora-spin {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* --- 1. СТРУКТУРА И ГЛОБАЛЬНЫЕ СТИЛИ --- */
+
 body {
-    background-color: var(--midnight-blue);
-    background-image: radial-gradient(circle at 1% 1%, var(--midnight-blue) 0%, var(--deep-space) 100%);
+    background-color: var(--deep-space); 
     color: var(--moon-white);
     font-family: 'Manrope', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Эти три строки — магия, которая прижимает футер к низу */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* --- КЛЮЧЕВОЕ ИСПРАВЛЕНИЕ №2: РАСТЯГИВАЕМ ОСНОВНОЙ КОНТЕНТ --- */
-/* 
-  Мы говорим основному контейнеру, чтобы он занимал всё
-  свободное пространство, выталкивая футер вниз.
-  ВАЖНО: Убедитесь, что ваш <main> находится внутри <div class="container">
-*/
 .container {
-    flex-grow: 1;
+    flex-grow: 1; 
 }
 
+/* Стили для холста с JS-анимацией */
+#cosmic-dust-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
 
-/* --- 1. ТИПОГРАФИКА: ЗАГОЛОВКИ С ХАРАКТЕРОМ --- */
+/* --- 2. ТИПОГРАФИКА --- */
+
 h1, h3, h4 {
     color: var(--moon-white);
     font-weight: 800;
@@ -84,7 +104,9 @@ a {
         text-shadow: 0 0 8px var(--electric-purple);
     }
 
-/* --- 2. НАВИГАЦИЯ: ПАРЯЩЕЕ СТЕКЛО --- */
+/* --- 3. КОМПОНЕНТЫ --- */
+
+/* Навигация */
 .navbar {
     background: var(--glass-bg) !important;
     backdrop-filter: blur(12px);
@@ -104,7 +126,7 @@ a {
         transform: translateY(-2px);
     }
 
-/* --- 3. ТАБЛИЦЫ: ИНФОРМАЦИЯ В НЕВЕСОМОСТИ --- */
+/* Таблицы */
 .table {
     border: none;
     width: 100%;
@@ -144,7 +166,7 @@ a {
     transform: translateY(-2px);
 }
 
-/* --- 4. ФОРМЫ: ИНТЕРАКТИВНЫЕ И ТАКТИЛЬНЫЕ --- */
+/* Формы */
 .form-control, .form-select {
     background-color: transparent;
     color: var(--moon-white);
@@ -158,7 +180,6 @@ a {
         color: var(--comet-grey);
     }
 
-
     .form-control:focus, .form-select:focus {
         background-color: var(--glass-bg);
         color: var(--moon-white);
@@ -170,31 +191,17 @@ a {
         animation: aurora-spin 3s linear infinite;
     }
 
-@keyframes aurora-spin {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* --- 5. ФУТЕР: МОНОЛИТНОЕ ЗАВЕРШЕНИЕ --- */
+/* Футер */
 .footer {
     background-color: transparent;
     color: var(--comet-grey);
     padding: 2rem 0;
-    /* Это свойство — дополнительная гарантия, что футер будет внизу */
-    margin-top: auto;
+    margin-top: auto; 
+    text-align: center;
 }
 
-.border-top {
-    border-top: 1px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, transparent, var(--glass-border), transparent);
-}
+    .footer.border-top {
+        border-top: 1px solid !important;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, transparent, var(--glass-border), transparent);
+    }
