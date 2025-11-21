@@ -1,8 +1,41 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Главная страница";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Блок "Добро пожаловать" -->
+<div class="text-center p-5 mb-4 rounded-3" style="background-color: #343a40;">
+    <h1 class="display-4 fw-bold text-white">Портал Научных Публикаций</h1>
+    <p class="fs-4 text-white-50">Ваш центральный узел для управления научной деятельностью факультета.</p>
+</div>
+
+<!-- Блок с карточками-ссылками -->
+<div class="row align-items-md-stretch">
+
+    <!-- Карточка 1: Публикации -->
+    <div class="col-md-6 mb-4">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h2>Публикации</h2>
+            <p>Просмотр, добавление и управление списком всех научных публикаций. Используйте фильтры для быстрого поиска.</p>
+            <a class="btn btn-outline-light" asp-controller="Publications" asp-action="Index">Перейти к публикациям &raquo;</a>
+        </div>
+    </div>
+
+    <!-- Карточка 2: Преподаватели -->
+    <div class="col-md-6 mb-4">
+        <div class="h-100 p-5 bg-light border rounded-3 text-dark">
+            <h2>Преподаватели</h2>
+            <p>Ознакомьтесь с профилями преподавателей, их наукометрическими показателями и списком работ.</p>
+            <a class="btn btn-outline-secondary" asp-controller="Teachers" asp-action="Index">Список преподавателей &raquo;</a>
+        </div>
+    </div>
+
+    <!-- Карточка 3: Отчеты -->
+    <div class="col-md-12">
+        <div class="h-100 p-5 text-white rounded-3" style="background-color: #0d6efd;">
+            <h2>Отчеты</h2>
+            <p>Сформируйте специализированные отчеты: публикации по кафедре или по конкретному преподавателю за указанный год.</p>
+            <a class="btn btn-outline-light" asp-controller="Reports" asp-action="PublicationsByDepartment">Перейти к отчетам &raquo;</a>
+        </div>
+    </div>
+
 </div>

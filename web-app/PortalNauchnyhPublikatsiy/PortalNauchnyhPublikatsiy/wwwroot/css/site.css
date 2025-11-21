@@ -37,6 +37,7 @@ body {
     --transition-fast: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* --- КЛЮЧЕВОЕ ИСПРАВЛЕНИЕ №1: FLEXBOX ЛОГИКА ДЛЯ BODY --- */
 body {
     background-color: var(--midnight-blue);
     background-image: radial-gradient(circle at 1% 1%, var(--midnight-blue) 0%, var(--deep-space) 100%);
@@ -44,7 +45,22 @@ body {
     font-family: 'Manrope', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Эти три строки — магия, которая прижимает футер к низу */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/* --- КЛЮЧЕВОЕ ИСПРАВЛЕНИЕ №2: РАСТЯГИВАЕМ ОСНОВНОЙ КОНТЕНТ --- */
+/* 
+  Мы говорим основному контейнеру, чтобы он занимал всё
+  свободное пространство, выталкивая футер вниз.
+  ВАЖНО: Убедитесь, что ваш <main> находится внутри <div class="container">
+*/
+.container {
+    flex-grow: 1;
+}
+
 
 /* --- 1. ТИПОГРАФИКА: ЗАГОЛОВКИ С ХАРАКТЕРОМ --- */
 h1, h3, h4 {
@@ -74,7 +90,7 @@ a {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
-    padding: 1rem 0; 
+    padding: 1rem 0;
 }
 
 .navbar-brand, .nav-link {
@@ -93,13 +109,10 @@ a {
     border: none;
     width: 100%;
     margin-top: 2rem;
-    border-collapse: separate; 
+    border-collapse: separate;
     border-spacing: 0;
 }
 
-    /* 
-  Явно задаем цвет текста для всех ячеек, чтобы избежать переопределения.
-*/
     .table > :not(caption) > * > * {
         color: var(--moon-white);
         background-color: transparent;
@@ -128,7 +141,7 @@ a {
 
 .table-hover > tbody > tr:hover > * {
     --bs-table-accent-bg: rgba(154, 72, 255, 0.15);
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 /* --- 4. ФОРМЫ: ИНТЕРАКТИВНЫЕ И ТАКТИЛЬНЫЕ --- */
@@ -136,7 +149,7 @@ a {
     background-color: transparent;
     color: var(--moon-white);
     border: 1px solid var(--glass-border);
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 12px 16px;
     transition: var(--transition-fast);
 }
@@ -176,10 +189,11 @@ a {
     background-color: transparent;
     color: var(--comet-grey);
     padding: 2rem 0;
+    /* Это свойство — дополнительная гарантия, что футер будет внизу */
+    margin-top: auto;
 }
 
 .border-top {
-    /* Градиентная линия вместо сплошной */
     border-top: 1px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--glass-border), transparent);
