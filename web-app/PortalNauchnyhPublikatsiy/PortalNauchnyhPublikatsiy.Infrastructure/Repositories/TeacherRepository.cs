@@ -45,5 +45,27 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
             var q1q2Count = _context.Database.SqlQuery<int>($"EXEC sp_GetQ1Q2CountForTeacher @TeacherId={teacherId}").AsEnumerable().FirstOrDefault();
             return q1q2Count;
         }
+
+        public async Task AddAsync(Teacher teacher)
+        {
+            await _context.Teachers.AddAsync(teacher);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateAsync(Teacher teacher)
+        {
+            _context.Teachers.Update(teacher);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var teacher = await _context.Teachers.FindAsync(id);
+            if (teacher != null)
+            {
+                _context.Teachers.Remove(teacher);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }

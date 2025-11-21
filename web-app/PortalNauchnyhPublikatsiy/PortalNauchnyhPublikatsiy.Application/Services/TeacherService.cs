@@ -1,10 +1,11 @@
-﻿using System;
+﻿using PortalNauchnyhPublikatsiy.Application.DTO;
+using PortalNauchnyhPublikatsiy.Application.Interfaces;
+using PortalNauchnyhPublikatsiy.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PortalNauchnyhPublikatsiy.Application.DTO;
-using PortalNauchnyhPublikatsiy.Application.Interfaces;
 
 namespace PortalNauchnyhPublikatsiy.Application.Services
 {
@@ -74,6 +75,36 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
                     Role = p.LeaderId == id ? "Руководитель" : "Участник"
                 })
             };
+        }
+
+        public async Task AddTeacherAsync(CreateTeacherDto dto)
+        {
+            var teacher = new Teacher // Используем using ...Domain.Entities;
+            {
+                FullName = dto.FullName,
+                Position = dto.Position,
+                Degree = dto.Degree,
+                DepartmentId = dto.DepartmentId
+            };
+            await _teacherRepository.AddAsync(teacher);
+        }
+
+        public async Task UpdateTeacherAsync(UpdateTeacherDto dto)
+        {
+            var teacher = await _teacherRepository.GetByIdAsync(dto.Id);
+            if (teacher != null)
+            {
+                teacher.FullName = dto.FullName;
+                teacher.Position = dto.Position;
+                teacher.Degree = dto.Degree;
+                teacher.DepartmentId = dto.DepartmentId;
+                await _teacherRepository.UpdateAsync(teacher);
+            }
+        }
+
+        public async Task DeleteTeacherAsync(int id)
+        {
+            await _teacherRepository.DeleteAsync(id);
         }
     }
 }
