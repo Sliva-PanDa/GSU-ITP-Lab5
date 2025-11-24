@@ -31,7 +31,6 @@ namespace PortalNauchnyhPublikatsiy.Web.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
-        // Бонус: добавим RoleManager, чтобы присваивать роль
         private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
@@ -40,7 +39,7 @@ namespace PortalNauchnyhPublikatsiy.Web.Areas.Identity.Pages.Account
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
-            RoleManager<IdentityRole> roleManager) // <-- Добавили RoleManager
+            RoleManager<IdentityRole> roleManager) 
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -48,7 +47,7 @@ namespace PortalNauchnyhPublikatsiy.Web.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
-            _roleManager = roleManager; // <-- Сохраняем RoleManager
+            _roleManager = roleManager; 
         }
 
         [BindProperty]
@@ -58,7 +57,6 @@ namespace PortalNauchnyhPublikatsiy.Web.Areas.Identity.Pages.Account
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
-        // ↓↓↓ ВОТ ЭТА ЧАСТЬ БЫЛА ПРОПУЩЕНА. ТЕПЕРЬ ОНА НА МЕСТЕ. ↓↓↓
         public class InputModel
         {
             [Required(ErrorMessage = "Поле Email обязательно для заполнения.")]
@@ -101,7 +99,6 @@ namespace PortalNauchnyhPublikatsiy.Web.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("Пользователь создал новый аккаунт с паролем.");
 
-                    // Присваиваем роль "Пользователь" по умолчанию
                     await _userManager.AddToRoleAsync(user, "Пользователь");
 
                     var userId = await _userManager.GetUserIdAsync(user);
@@ -113,7 +110,7 @@ namespace PortalNauchnyhPublikatsiy.Web.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    // Эту строку лучше закомментировать, пока у вас нет настроенного email-сервиса
+                    // Эту строку лучше закомментировать, пока у меня нет настроенного email-сервиса
                     // await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                     //     $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
