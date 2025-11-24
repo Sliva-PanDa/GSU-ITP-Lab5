@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PortalNauchnyhPublikatsiy.Application.Common;
 using PortalNauchnyhPublikatsiy.Application.DTO;
 using PortalNauchnyhPublikatsiy.Application.Interfaces;
 
@@ -39,21 +40,24 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
             };
         }
 
-        public async Task<IEnumerable<PublicationDto>> GetAllPublicationsAsync(string? searchString, int? year)
+        public async Task<PaginatedList<PublicationDto>> GetAllPublicationsAsync(string? searchString, int? year, int pageIndex, int pageSize)
         {
-            var publications = await _publicationRepository.GetAllAsync(searchString, year);
+            var publicationsQuery = _publicationRepository.GetAllAsQueryable(searchString, year);
 
-            return publications.Select(publication => new PublicationDto
+            var publicationsDtoQuery = publicationsQuery.Select(p => new PublicationDto
             {
-                Id = publication.Id,
-                Title = publication.Title,
-                Type = publication.Type,
-                Year = publication.Year,
-                JournalName = publication.JournalConference?.Name,
-                JournalConferenceId = publication.JournalConferenceId,
-                DOI = publication.DOI
+                Id = p.Id,
+                Title = p.Title,
+                Type = p.Type,
+                Year = p.Year,
+                JournalName = p.JournalConference.Name,
+                DOI = p.DOI,
+                JournalConferenceId = p.JournalConferenceId
             });
+
+            return await PaginatedList<PublicationDto>.CreateAsync(publicationsDtoQuery, pageIndex, pageSize);
         }
+
         public async Task CreatePublicationAsync(CreatePublicationDto publicationDto)
         {
             var publication = new Domain.Entities.Publication

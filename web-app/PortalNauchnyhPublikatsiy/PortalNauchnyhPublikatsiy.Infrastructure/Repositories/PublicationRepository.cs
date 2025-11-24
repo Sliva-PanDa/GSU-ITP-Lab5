@@ -26,7 +26,7 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task<IEnumerable<Publication>> GetAllAsync(string? searchString, int? year)
+        public IQueryable<Publication> GetAllAsQueryable(string? searchString, int? year)
         {
             var query = _context.Publications.Include(p => p.JournalConference).AsQueryable();
 
@@ -40,7 +40,7 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Repositories
                 query = query.Where(p => p.Year == year.Value);
             }
 
-            return await query.ToListAsync();
+            return query.OrderByDescending(p => p.Year); // Возвращаем IQueryable
         }
 
         public async Task AddAsync(Publication publication)
