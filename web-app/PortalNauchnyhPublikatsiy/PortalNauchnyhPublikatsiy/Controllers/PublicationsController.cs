@@ -16,13 +16,17 @@ namespace PortalNauchnyhPublikatsiy.Web.Controllers
             _journalService = journalService;
         }
 
-        public async Task<IActionResult> Index(string searchString, int? year)
+        public async Task<IActionResult> Index(string searchString, int? year, int? pageNumber)
         {
             ViewData["CurrentFilter"] = searchString;
             ViewData["CurrentYearFilter"] = year;
 
-            var publications = await _publicationService.GetAllPublicationsAsync(searchString, year);
-            return View(publications);
+            int pageSize = 10; 
+            int currentPage = pageNumber ?? 1; 
+
+            var paginatedPublications = await _publicationService.GetAllPublicationsAsync(searchString, year, currentPage, pageSize);
+
+            return View(paginatedPublications);
         }
 
         public async Task<IActionResult> Details(int? id)

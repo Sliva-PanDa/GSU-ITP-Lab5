@@ -1,4 +1,5 @@
 ﻿using PortalNauchnyhPublikatsiy.Application.DTO;
+using PortalNauchnyhPublikatsiy.Application.Common;
 using PortalNauchnyhPublikatsiy.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace PortalNauchnyhPublikatsiy.Application.Services
 {
     public interface IPublicationService
     {
-        Task<IEnumerable<PublicationDto>> GetAllPublicationsAsync(string? searchString, int? year);
+        Task<PaginatedList<PublicationDto>> GetAllPublicationsAsync(string? searchString, int? year, int pageIndex, int pageSize);
         Task<PublicationDto?> GetPublicationByIdAsync(int id);
         Task CreatePublicationAsync(CreatePublicationDto publicationDto);
         Task UpdatePublicationAsync(UpdatePublicationDto publicationDto);
