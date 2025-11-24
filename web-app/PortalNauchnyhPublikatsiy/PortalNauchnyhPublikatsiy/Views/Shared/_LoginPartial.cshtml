@@ -1,0 +1,31 @@
+﻿@* ↓↓↓ Изменяем базовый IdentityUser на наш ApplicationUser ↓↓↓ *@
+@using Microsoft.AspNetCore.Identity
+@using PortalNauchnyhPublikatsiy.Domain.Entities.Identity
+
+@* ↓↓↓ И здесь тоже ↓↓↓ *@
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            @* Используем asp-page для правильной маршрутизации к страницам Identity *@
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" style="color: var(--moon-white); font-weight: 700;">Привет, @UserManager.GetUserName(User)!</a>
+        </li>
+        <li class="nav-item">
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="nav-link btn btn-link" style="color: var(--moon-white); font-weight: 700;">Выход</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Register" style="color: var(--moon-white); font-weight: 700;">Регистрация</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Login" style="color: var(--moon-white); font-weight: 700;">Вход</a>
+        </li>
+    }
+</ul>

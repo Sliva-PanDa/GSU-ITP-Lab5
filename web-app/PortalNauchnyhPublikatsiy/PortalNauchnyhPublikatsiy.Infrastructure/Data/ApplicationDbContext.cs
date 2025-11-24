@@ -1,12 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PortalNauchnyhPublikatsiy.Domain.Entities;
 using System.Reflection;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using PortalNauchnyhPublikatsiy.Domain.Entities.Identity;
 
 namespace PortalNauchnyhPublikatsiy.Infrastructure.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
 
         public DbSet<Department> Departments { get; set; }
         public DbSet<JournalsConferences> JournalsConferences { get; set; }
