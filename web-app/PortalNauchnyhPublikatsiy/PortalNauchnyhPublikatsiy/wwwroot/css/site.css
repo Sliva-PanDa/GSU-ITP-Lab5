@@ -205,3 +205,43 @@ a {
         border-image-slice: 1;
         border-image-source: linear-gradient(to right, transparent, var(--glass-border), transparent);
     }
+
+/* œ¿√»Õ¿÷»ﬂ  */
+
+.pagination .page-link {
+    background-color: transparent; 
+    color: var(--comet-grey); 
+    border: 1px solid var(--glass-border); 
+    transition: var(--transition-fast); 
+    margin: 0 4px; 
+    border-radius: 6px; 
+}
+
+    .pagination .page-link:hover,
+    .pagination .page-link:focus {
+        color: var(--electric-purple); 
+        background-color: rgba(154, 72, 255, 0.1);
+        border-color: var(--electric-purple); 
+        box-shadow: 0 0 10px rgba(154, 72, 255, 0.3); 
+        transform: translateY(-2px); 
+        z-index: 2;
+    }
+
+.pagination .page-item.active .page-link {
+    background-color: var(--electric-purple); 
+    border-color: var(--electric-purple); 
+    color: var(--moon-white); 
+    box-shadow: 0 0 15px rgba(154, 72, 255, 0.5); 
+    z-index: 3;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d; 
+    background-color: transparent;
+    border-color: var(--glass-border);
+    opacity: 0.5; 
+}
+
+.pagination .page-link:focus {
+    box-shadow: 0 0 10px rgba(154, 72, 255, 0.3);
+}
