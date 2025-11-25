@@ -47,7 +47,12 @@ namespace PortalNauchnyhPublikatsiy.Infrastructure.Data
                 .HasOne(pp => pp.Project)
                 .WithMany()
                 .HasForeignKey(pp => pp.ProjectId)
-                .OnDelete(DeleteBehavior.Cascade); 
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<ApplicationUser>()
+                .HasOne(au => au.Teacher) 
+                .WithOne(t => t.ApplicationUser) 
+                .HasForeignKey<ApplicationUser>(au => au.TeacherId); 
         }
     }
 }

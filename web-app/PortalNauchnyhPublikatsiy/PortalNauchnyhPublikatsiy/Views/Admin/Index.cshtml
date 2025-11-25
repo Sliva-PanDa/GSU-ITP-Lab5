@@ -1,0 +1,32 @@
+﻿@model IEnumerable<PortalNauchnyhPublikatsiy.Web.Models.UserViewModel>
+
+@{
+    ViewData["Title"] = "Управление пользователями";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Роли</th>
+            <th>Связанный преподаватель</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@string.Join(", ", user.Roles)</td>
+                <td>@user.LinkedTeacherName</td>
+                <td>
+                    <a href="#" class="btn btn-sm btn-primary">Редактировать роли</a>
+                    <a href="#" class="btn btn-sm btn-secondary">Привязать преподавателя</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
