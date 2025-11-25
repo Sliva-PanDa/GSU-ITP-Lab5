@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using PortalNauchnyhPublikatsiy.Domain.Entities.Identity;
 using System.Threading.Tasks;
 
 namespace PortalNauchnyhPublikatsiy.Domain.Entities
@@ -14,5 +15,7 @@ namespace PortalNauchnyhPublikatsiy.Domain.Entities
         public string Degree { get; set; } = string.Empty;
         public int DepartmentId { get; set; }
         public Department Department { get; set; } = null!;
+        public string ApplicationUserId { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }
