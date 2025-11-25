@@ -1,8 +1,6 @@
-﻿@* ↓↓↓ Изменяем базовый IdentityUser на наш ApplicationUser ↓↓↓ *@
-@using Microsoft.AspNetCore.Identity
+﻿@using Microsoft.AspNetCore.Identity
 @using PortalNauchnyhPublikatsiy.Domain.Entities.Identity
 
-@* ↓↓↓ И здесь тоже ↓↓↓ *@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
