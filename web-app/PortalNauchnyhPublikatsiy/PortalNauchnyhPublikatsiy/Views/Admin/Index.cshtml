@@ -23,7 +23,7 @@
                 <td>@string.Join(", ", user.Roles)</td>
                 <td>@user.LinkedTeacherName</td>
                 <td>
-                    <a href="#" class="btn btn-sm btn-primary">Редактировать роли</a>
+                    <a asp-action="EditRoles" asp-route-userId="@user.Id" class="btn btn-sm btn-primary">Редактировать роли</a>
                     <a href="#" class="btn btn-sm btn-secondary">Привязать преподавателя</a>
                 </td>
             </tr>

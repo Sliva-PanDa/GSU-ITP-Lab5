@@ -1,0 +1,39 @@
+﻿@model PortalNauchnyhPublikatsiy.Web.Models.EditRolesViewModel
+
+@{
+    ViewData["Title"] = "Редактирование ролей";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h4>для пользователя @Model.UserEmail</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="EditRoles" method="post">
+            <input type="hidden" asp-for="UserId" />
+            <input type="hidden" asp-for="UserEmail" />
+
+            <div class="form-group">
+                <label class="control-label">Выберите роли для этого пользователя</label>
+                <select asp-for="SelectedRoles" asp-items="Model.AllRoles" class="form-control" multiple="multiple" style="height: 150px;"></select>
+                <span class="text-muted">Для выбора нескольких ролей зажмите Ctrl.</span>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h5>Текущие роли пользователя:</h5>
+    <ul>
+        @foreach (var role in Model.UserRoles)
+        {
+            <li>@role</li>
+        }
+    </ul>
+</div>
