@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using PortalNauchnyhPublikatsiy.Web.Models;
 using PortalNauchnyhPublikatsiy.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using PortalNauchnyhPublikatsiy.Infrastructure.Data;
 
 namespace PortalNauchnyhPublikatsiy.Web.Controllers
 {
@@ -13,11 +14,13 @@ namespace PortalNauchnyhPublikatsiy.Web.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ApplicationDbContext _context;
 
-        public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+        public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, ApplicationDbContext context)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _context = context;
         }
 
         public async Task<IActionResult> Index()
@@ -96,6 +99,59 @@ namespace PortalNauchnyhPublikatsiy.Web.Controllers
                 ModelState.AddModelError("", "Не удалось добавить новые роли пользователю.");
                 return View(model);
             }
+
+            return RedirectToAction("Index");
+        }
+        // GET: Admin/LinkTeacher/userId
+        public async Task<IActionResult> LinkTeacher(string userId)
+        {
+            if (string.IsNullOrEmpty(userId))
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound($"Не удалось найти пользователя с ID '{userId}'.");
+            }
+
+            // Находим всех преподавателей, у которых ЕЩЕ НЕТ привязки к аккаунту
+            // (т.е. ApplicationUserId - это либо null, либо пустая строка)
+            var availableTeachers = await _context.Teachers
+                .Where(t => string.IsNullOrEmpty(t.ApplicationUserId))
+                .ToListAsync();
+
+            var model = new LinkTeacherViewModel
+            {
+                UserId = user.Id,
+                UserEmail = user.Email,
+                AvailableTeachers = availableTeachers.Select(t => new SelectListItem
+                {
+                    Text = t.FullName,
+                    Value = t.Id.ToString()
+                }).ToList()
+            };
+
+            return View(model);
+        }
+        // POST: Admin/LinkTeacher
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> LinkTeacher(LinkTeacherViewModel model)
+        {
+            var user = await _userManager.FindByIdAsync(model.UserId);
+            var teacher = await _context.Teachers.FindAsync(model.SelectedTeacherId);
+
+            if (user == null || teacher == null)
+            {
+                return NotFound();
+            }
+
+            user.TeacherId = teacher.Id;
+            teacher.ApplicationUserId = user.Id;
+
+            await _userManager.UpdateAsync(user); 
 
             return RedirectToAction("Index");
         }

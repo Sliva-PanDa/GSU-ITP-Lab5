@@ -1,0 +1,42 @@
+﻿@model PortalNauchnyhPublikatsiy.Web.Models.LinkTeacherViewModel
+
+@{
+    ViewData["Title"] = "Привязка преподавателя";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h4>для аккаунта @Model.UserEmail</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="LinkTeacher" method="post">
+            <input type="hidden" asp-for="UserId" />
+            <input type="hidden" asp-for="UserEmail" />
+
+            <div class="form-group">
+                <label class="control-label">Выберите профиль преподавателя для привязки</label>
+                @if (Model.AvailableTeachers.Any())
+                {
+                    <select asp-for="SelectedTeacherId" asp-items="Model.AvailableTeachers" class="form-control">
+                        <option value="">-- Выберите преподавателя --</option>
+                    </select>
+                }
+                else
+                {
+                    <div class="alert alert-warning mt-2">
+                        Нет доступных для привязки преподавателей. Все уже привязаны к аккаунтам.
+                    </div>
+                }
+            </div>
+
+            <div class="form-group mt-3">
+                @if (Model.AvailableTeachers.Any())
+                {
+                    <input type="submit" value="Привязать" class="btn btn-primary" />
+                }
+                <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</div>
