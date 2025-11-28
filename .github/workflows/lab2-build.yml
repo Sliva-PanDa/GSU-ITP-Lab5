@@ -5,9 +5,12 @@ name: Build Lab 2 Project (Senozhenskiy)
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'lab2-Senozhenskiy/**' 
   pull_request:
     branches: [ "main" ]
-
+    paths:
+      - 'lab2-Senozhenskiy/**' 
 jobs:
   build:
     # Платформы для сборки
