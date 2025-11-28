@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+
+@{
+    ViewData["Title"] = "Управление пользователями";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @* Позже здесь будет кнопка "Добавить пользователя" *@
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Пользователь
+            </th>
+            <th>
+                Email
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => user.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.Email)
+                </td>
+                <td>
+                    @* Позже здесь будут кнопки "Редактировать" | "Удалить" *@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

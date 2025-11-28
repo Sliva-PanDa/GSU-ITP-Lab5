@@ -1,0 +1,60 @@
+@model IEnumerable<SciencePortalMVC.Models.Publication>
+
+    @{
+    ViewData["Title"] = "Публикации";
+    }
+
+    <h1>Публикации</h1>
+
+    <p>
+        <a asp-action="Create">Добавить новую</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Year)
+                </th>
+                <th>
+                    Авторы
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @if (item.Teachers != null && item.Teachers.Any())
+                {
+                    <text>@string.Join(", ", item.Teachers.Select(t => t.FullName))</text>
+                }
+                else
+                {
+                    <span>Нет авторов</span>
+                }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PublicationId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.PublicationId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PublicationId">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
