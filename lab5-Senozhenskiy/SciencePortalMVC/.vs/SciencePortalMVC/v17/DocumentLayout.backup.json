@@ -3,30 +3,27 @@
   "WorkspaceRootPath": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\views\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:views\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECD5EAFD-8C16-424F-9283-DF8BEBFD6C60}|..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc.tests\\projectscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\scienceportalmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:scienceportalmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD5EAFD-8C16-424F-9283-DF8BEBFD6C60}|..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc.tests\\departmentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\interfaces\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:interfaces\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD5EAFD-8C16-424F-9283-DF8BEBFD6C60}|..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc.tests\\scienceportalmvc.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\publicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\publicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,6 +32,63 @@
     {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\repositories\\publicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:repositories\\publicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\interfaces\\ipublicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:interfaces\\ipublicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD5EAFD-8C16-424F-9283-DF8BEBFD6C60}|..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc.tests\\publicationscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD5EAFD-8C16-424F-9283-DF8BEBFD6C60}|..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc.tests\\scienceportalmvc.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD5EAFD-8C16-424F-9283-DF8BEBFD6C60}|..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc.tests\\departmentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\views\\publications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:views\\publications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\views\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:views\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\views\\projects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:views\\projects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\services\\dummyemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:services\\dummyemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\scienceportalmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:scienceportalmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\viewmodels\\teacherfilterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\data\\roleinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:data\\roleinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49967C9A-3EB8-FE16-46FC-31BF0B7A21BD}|SciencePortalMVC.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab5\\scienceportalmvc\\data\\scienceportaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,19 +130,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAUwGEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:31:17.176Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PublicationsController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\PublicationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PublicationsController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\PublicationsController.cs",
+              "RelativeToolTip": "Controllers\\PublicationsController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:32:23.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectsControllerTests.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\ProjectsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\SciencePortalMVC.Tests\\ProjectsControllerTests.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\ProjectsControllerTests.cs",
+              "RelativeToolTip": "..\\SciencePortalMVC.Tests\\ProjectsControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T17:30:51.258Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IProjectRepository.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IProjectRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IProjectRepository.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IProjectRepository.cs",
+              "RelativeToolTip": "Interfaces\\IProjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T17:21:18.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProjectRepository.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T17:21:47.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T11:57:39.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DepartmentRepository.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T11:54:50.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDepartmentRepository.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Interfaces\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T11:53:37.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T22:52:40.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PublicationRepository.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\PublicationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PublicationRepository.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\PublicationRepository.cs",
+              "RelativeToolTip": "Repositories\\PublicationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T17:28:26.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPublicationRepository.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IPublicationRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IPublicationRepository.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IPublicationRepository.cs",
+              "RelativeToolTip": "Interfaces\\IPublicationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T17:27:45.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PublicationsControllerTests.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\PublicationsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\SciencePortalMVC.Tests\\PublicationsControllerTests.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\PublicationsControllerTests.cs",
+              "RelativeToolTip": "..\\SciencePortalMVC.Tests\\PublicationsControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T17:31:28.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "DepartmentsControllerTests.cs",
               "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\DepartmentsControllerTests.cs",
               "RelativeDocumentMoniker": "..\\SciencePortalMVC.Tests\\DepartmentsControllerTests.cs",
@@ -109,47 +303,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SciencePortalMVC.csproj",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\SciencePortalMVC.csproj",
-              "RelativeDocumentMoniker": "SciencePortalMVC.csproj",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\SciencePortalMVC.csproj",
-              "RelativeToolTip": "SciencePortalMVC.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-27T22:02:14.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeachersController.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\TeachersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TeachersController.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\TeachersController.cs",
-              "RelativeToolTip": "Controllers\\TeachersController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwB0AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T11:29:30.527Z",
+              "WhenOpened": "2025-11-27T22:15:02.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Teachers\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Teachers\\Index.cshtml",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Teachers\\Index.cshtml",
-              "RelativeToolTip": "Views\\Teachers\\Index.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAgwFgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-28T11:32:24.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SciencePortalMVC.Tests",
+              "DocumentIndex": 12,
+              "Title": "SciencePortalMVC.Tests.csproj",
               "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj",
               "RelativeDocumentMoniker": "..\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj",
               "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC.Tests\\SciencePortalMVC.Tests.csproj",
@@ -161,163 +329,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T11:57:39.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\DepartmentRepository.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Repositories\\DepartmentRepository.cs",
-              "RelativeToolTip": "Repositories\\DepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T11:54:50.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IDepartmentRepository.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IDepartmentRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IDepartmentRepository.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Interfaces\\IDepartmentRepository.cs",
-              "RelativeToolTip": "Interfaces\\IDepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T11:53:37.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TeacherFilterViewModel.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\ViewModels\\TeacherFilterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\TeacherFilterViewModel.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\ViewModels\\TeacherFilterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\TeacherFilterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T11:29:05.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:15:02.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Users.cshtml",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Admin\\Users.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Users.cshtml",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Admin\\Users.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Users.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-27T22:57:37.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:52:40.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:56:00.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RoleInitializer.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Data\\RoleInitializer.cs",
-              "RelativeDocumentMoniker": "Data\\RoleInitializer.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Data\\RoleInitializer.cs",
-              "RelativeToolTip": "Data\\RoleInitializer.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:28:55.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Publications\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Publications\\Index.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Publications\\Index.cshtml",
+              "RelativeToolTip": "Views\\Publications\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-27T22:22:13.908Z",
+              "WhenOpened": "2025-11-28T16:44:13.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAiwC0AAAAbAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Projects\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Projects\\Index.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Projects\\Index.cshtml",
+              "RelativeToolTip": "Views\\Projects\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-27T22:18:29.665Z",
+              "WhenOpened": "2025-11-28T16:40:33.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "20251127221321_AddIdentitySchema.cs",
-              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Migrations\\20251127221321_AddIdentitySchema.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251127221321_AddIdentitySchema.cs",
-              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Migrations\\20251127221321_AddIdentitySchema.cs",
-              "RelativeToolTip": "Migrations\\20251127221321_AddIdentitySchema.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:13:22.233Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Departments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Index.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Departments\\Index.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T16:38:26.894Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Teachers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Teachers\\Index.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Teachers\\Index.cshtml",
+              "RelativeToolTip": "Views\\Teachers\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEIAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T11:32:24.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -330,7 +402,129 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TeachersController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "Controllers\\TeachersController.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAAAMsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T11:29:30.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DummyEmailSender.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Services\\DummyEmailSender.cs",
+              "RelativeDocumentMoniker": "Services\\DummyEmailSender.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Services\\DummyEmailSender.cs",
+              "RelativeToolTip": "Services\\DummyEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:38:47.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SciencePortalMVC.csproj",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\SciencePortalMVC.csproj",
+              "RelativeDocumentMoniker": "SciencePortalMVC.csproj",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\SciencePortalMVC.csproj",
+              "RelativeToolTip": "SciencePortalMVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-27T22:02:14.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TeacherFilterViewModel.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\ViewModels\\TeacherFilterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\TeacherFilterViewModel.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\ViewModels\\TeacherFilterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\TeacherFilterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T11:29:05.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Admin\\Users.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Users.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Admin\\Users.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Users.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:57:37.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T22:56:00.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoleInitializer.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Data\\RoleInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\RoleInitializer.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Data\\RoleInitializer.cs",
+              "RelativeToolTip": "Data\\RoleInitializer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T22:28:55.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:22:13.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwC0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:18:29.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20251127221321_AddIdentitySchema.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Migrations\\20251127221321_AddIdentitySchema.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251127221321_AddIdentitySchema.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Migrations\\20251127221321_AddIdentitySchema.cs",
+              "RelativeToolTip": "Migrations\\20251127221321_AddIdentitySchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T22:13:22.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "SciencePortalDbContext.cs",
               "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab5\\SciencePortalMVC\\Data\\SciencePortalDbContext.cs",
               "RelativeDocumentMoniker": "Data\\SciencePortalDbContext.cs",
@@ -338,8 +532,7 @@
               "RelativeToolTip": "Data\\SciencePortalDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T21:58:43.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T21:58:43.437Z"
             }
           ]
         }

@@ -18,9 +18,12 @@
     </div>
 </form>
 
-<p>
-    <a asp-action="Create">Добавить нового</a>
-</p>
+@if (User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create">Добавить нового</a>
+    </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -54,11 +57,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Department.Name)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TeacherId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
-            </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.TeacherId">Details</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <text> | </text>
+                        <a asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a>
+                        <text> | </text>
+                        <a asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
+                    }
+                </td>
         </tr>
 }
     </tbody>

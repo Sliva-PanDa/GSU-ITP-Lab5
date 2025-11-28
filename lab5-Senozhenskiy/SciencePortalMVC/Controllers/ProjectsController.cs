@@ -1,165 +1,115 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using SciencePortalMVC.Data;
+using SciencePortalMVC.Interfaces;
 using SciencePortalMVC.Models;
 
 namespace SciencePortalMVC.Controllers
 {
+    [Authorize]
     public class ProjectsController : Controller
     {
-        private readonly SciencePortalDbContext _context;
+        private readonly IProjectRepository _projectRepository;
 
-        public ProjectsController(SciencePortalDbContext context)
+        // Конструктор теперь СНОВА принимает ТОЛЬКО репозиторий
+        public ProjectsController(IProjectRepository projectRepository)
         {
-            _context = context;
+            _projectRepository = projectRepository;
         }
 
         // GET: Projects
         [ResponseCache(Duration = 272, Location = ResponseCacheLocation.Any)]
         public async Task<IActionResult> Index()
         {
-            var sciencePortalDbContext = _context.Projects.Include(p => p.Leader);
-            return View(await sciencePortalDbContext.ToListAsync());
+            return View(await _projectRepository.GetAllAsync());
         }
 
         // GET: Projects/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var project = await _context.Projects
-                .Include(p => p.Leader)
-                .FirstOrDefaultAsync(m => m.ProjectId == id);
-            if (project == null)
-            {
-                return NotFound();
-            }
-
-            return View(project);
+            if (id == null) return NotFound();
+            var project = await _projectRepository.GetByIdAsync(id.Value);
+            return project == null ? NotFound() : View(project);
         }
 
         // GET: Projects/Create
-        public IActionResult Create()
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create()
         {
-            ViewData["LeaderId"] = new SelectList(_context.Teachers, "TeacherId", "FullName");
+            // Используем репозиторий для получения списка преподавателей
+            ViewData["LeaderId"] = new SelectList(await _projectRepository.GetAllTeachersAsync(), "TeacherId", "FullName");
             return View();
         }
 
         // POST: Projects/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ProjectId,Name,Number,FundingOrg,StartDate,EndDate,LeaderId")] Project project)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(project);
-                await _context.SaveChangesAsync();
+                await _projectRepository.AddAsync(project);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LeaderId"] = new SelectList(_context.Teachers, "TeacherId", "FullName", project.LeaderId);
+            ViewData["LeaderId"] = new SelectList(await _projectRepository.GetAllTeachersAsync(), "TeacherId", "FullName", project.LeaderId);
             return View(project);
         }
 
         // GET: Projects/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var project = await _context.Projects.FindAsync(id);
-            if (project == null)
-            {
-                return NotFound();
-            }
-            ViewData["LeaderId"] = new SelectList(_context.Teachers, "TeacherId", "FullName", project.LeaderId);
+            if (id == null) return NotFound();
+            var project = await _projectRepository.GetByIdAsync(id.Value);
+            if (project == null) return NotFound();
+            ViewData["LeaderId"] = new SelectList(await _projectRepository.GetAllTeachersAsync(), "TeacherId", "FullName", project.LeaderId);
             return View(project);
         }
 
         // POST: Projects/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("ProjectId,Name,Number,FundingOrg,StartDate,EndDate,LeaderId")] Project project)
         {
-            if (id != project.ProjectId)
-            {
-                return NotFound();
-            }
+            if (id != project.ProjectId) return NotFound();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(project);
-                    await _context.SaveChangesAsync();
+                    await _projectRepository.UpdateAsync(project);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProjectExists(project.ProjectId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!await _projectRepository.ExistsAsync(project.ProjectId)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LeaderId"] = new SelectList(_context.Teachers, "TeacherId", "FullName", project.LeaderId);
+            ViewData["LeaderId"] = new SelectList(await _projectRepository.GetAllTeachersAsync(), "TeacherId", "FullName", project.LeaderId);
             return View(project);
         }
 
         // GET: Projects/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var project = await _context.Projects
-                .Include(p => p.Leader)
-                .FirstOrDefaultAsync(m => m.ProjectId == id);
-            if (project == null)
-            {
-                return NotFound();
-            }
-
-            return View(project);
+            if (id == null) return NotFound();
+            var project = await _projectRepository.GetByIdAsync(id.Value);
+            return project == null ? NotFound() : View(project);
         }
 
         // POST: Projects/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var project = await _context.Projects.FindAsync(id);
-            if (project != null)
-            {
-                _context.Projects.Remove(project);
-            }
-
-            await _context.SaveChangesAsync();
+            await _projectRepository.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool ProjectExists(int id)
-        {
-            return _context.Projects.Any(e => e.ProjectId == id);
         }
     }
 }

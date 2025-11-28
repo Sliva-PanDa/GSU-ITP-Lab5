@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SciencePortalMVC.Interfaces;
+using SciencePortalMVC.Models;
 
 namespace SciencePortalMVC.Controllers
 {
@@ -9,40 +11,81 @@ namespace SciencePortalMVC.Controllers
     {
         private readonly IDepartmentRepository _departmentRepository;
 
-        // Теперь конструктор принимает ТОЛЬКО репозиторий
         public DepartmentsController(IDepartmentRepository departmentRepository)
         {
             _departmentRepository = departmentRepository;
         }
 
-        // GET: Departments
-        public async Task<IActionResult> Index()
-        {
-            var departments = await _departmentRepository.GetAllAsync();
-            return View(departments);
-        }
+        public async Task<IActionResult> Index() => View(await _departmentRepository.GetAllAsync());
 
-        // GET: Departments/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
+            if (id == null) return NotFound();
             var department = await _departmentRepository.GetByIdAsync(id.Value);
-            if (department == null)
-            {
-                return NotFound();
-            }
+            return department == null ? NotFound() : View(department);
+        }
 
+        [Authorize(Roles = "Admin")]
+        public IActionResult Create() => View();
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create([Bind("DepartmentId,Name,Profile")] Department department)
+        {
+            if (ModelState.IsValid)
+            {
+                await _departmentRepository.AddAsync(department);
+                return RedirectToAction(nameof(Index));
+            }
             return View(department);
         }
 
-        /*
-            Методы Create, Edit, Delete временно закомментированы,
-            так как для их работы нужно расширять репозиторий,
-            а для выполнения задания это не требуется.
-        */
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null) return NotFound();
+            var department = await _departmentRepository.GetByIdAsync(id.Value);
+            return department == null ? NotFound() : View(department);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int id, [Bind("DepartmentId,Name,Profile")] Department department)
+        {
+            if (id != department.DepartmentId) return NotFound();
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    await _departmentRepository.UpdateAsync(department);
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!await _departmentRepository.ExistsAsync(department.DepartmentId)) return NotFound();
+                    else throw;
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(department);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return NotFound();
+            var department = await _departmentRepository.GetByIdAsync(id.Value);
+            return department == null ? NotFound() : View(department);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            await _departmentRepository.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

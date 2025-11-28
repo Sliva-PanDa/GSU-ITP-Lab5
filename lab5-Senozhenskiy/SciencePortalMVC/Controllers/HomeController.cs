@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SciencePortalMVC.Controllers;
 
-[Authorize]
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

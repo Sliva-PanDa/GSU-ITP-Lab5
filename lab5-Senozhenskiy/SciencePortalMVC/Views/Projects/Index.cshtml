@@ -6,9 +6,12 @@
 
     <h1>Проекты</h1>
 
+@if (User.IsInRole("Admin"))
+{
     <p>
-        <a asp-action="Create">Добавить новый</a>
+        <a asp-action="Create">Добавить нового</a>
     </p>
+}
     <table class="table">
         <thead>
             <tr>
@@ -49,9 +52,14 @@
                     @Html.DisplayFor(modelItem => item.Leader.FullName)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.ProjectId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ProjectId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ProjectId">Delete</a>
+                    <a asp-action="Details" asp-route-id="@item.ProjectId">Details</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                <text> | </text>
+                        <a asp-action="Edit" asp-route-id="@item.ProjectId">Edit</a>
+                        <text> | </text>
+                        < a asp - action = "Delete" asp - route - id = "@item.ProjectId" > Delete </ a >
+                        }
                 </td>
             </tr>
 }

@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SciencePortalMVC.Data;
-using SciencePortalMVC.Middleware;
-using Microsoft.AspNetCore.Identity;
 using SciencePortalMVC.Interfaces;
+using SciencePortalMVC.Middleware;
 using SciencePortalMVC.Repositories;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using SciencePortalMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +13,24 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<SciencePortalDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+/*builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<SciencePortalDbContext>()
+.AddDefaultTokenProviders();*/
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Identity/Account/Login";
+    options.LogoutPath = "/Identity/Account/Logout";
+    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+});
+
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<SciencePortalDbContext>();
+    .AddEntityFrameworkStores<SciencePortalDbContext>()
+.AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IPublicationRepository, PublicationRepository>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -22,9 +40,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IEmailSender, DummyEmailSender>();
 
 var app = builder.Build();
 
@@ -39,20 +57,19 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession(); 
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseSession();
 app.UseDbInitializer();
-
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapRazorPages(); 
 
-app.MapRazorPages();
 
-// Блок для инициализации ролей и администратора
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

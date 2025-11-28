@@ -6,9 +6,12 @@
 
     <h1>Публикации</h1>
 
+@if (User.IsInRole("Admin"))
+{
     <p>
-        <a asp-action="Create">Добавить новую</a>
+        <a asp-action="Create">Добавить нового</a>
     </p>
+}
     <table class="table">
         <thead>
             <tr>
@@ -50,9 +53,13 @@
                 }
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.PublicationId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.PublicationId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.PublicationId">Delete</a>
+                    <a asp-action="Details" asp-route-id="@item.PublicationId">Details</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <text> | </text>
+                        <a asp-action="Edit" asp-route-id="@item.PublicationId">Edit</a>
+                        <text> | </text>
+                        < a asp - action = "Delete" asp - route - id = "@item.PublicationId" > Delete </ a >}
                 </td>
             </tr>
         }
